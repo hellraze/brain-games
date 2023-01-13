@@ -43,7 +43,7 @@ const calc = (name) => {
     const questionExpression = getRandomExpression();
     const correctAnswer = calcExpression(questionExpression);
     const userAnswer = getUserAnswer();
-    if (userAnswer != String(correctAnswer)) {
+    if (userAnswer !== String(correctAnswer)) {
       return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again ${userName}!`;
     }
     console.log('Correct!')
