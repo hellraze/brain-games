@@ -3,11 +3,17 @@
 //  if answer is correct congrats user
 import readlineSync from 'readline-sync';
 import welcome from './welcome.js';
-import isUserAnswerValid from './isAnswerValid.js';
 import getRandomNumber from './getRandomNumber.js';
 
 // Checks if a number is even
 const isEven = (number) => number % 2 === 0;
+
+const isUserAnswerValid = (answer) => {
+  if ((answer === 'yes') || (answer === 'no')) {
+    return true;
+  }
+  return false;
+};
 
 //  Generates a random numbers,
 //  asks a questions to the user isEven,
