@@ -19,13 +19,15 @@ const calcExpression = (expression) => {
   const number2 = Number(expressionParts[2]);
   const operator = expressionParts[1];
 
-  switch(operator) {
+  switch (operator) {
     case '+':
-      return number1 + number2
+      return number1 + number2;
     case '-':
-      return number1 - number2
+      return number1 - number2;
     case '*':
-      return number1 * number2
+      return number1 * number2;
+    default:
+      break;
   }
 };
 
@@ -46,8 +48,8 @@ const calc = (name) => {
     if (userAnswer !== String(correctAnswer)) {
       return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again ${userName}!`;
     }
-    console.log('Correct!')
-  };
+    console.log('Correct!');
+  }
   return `Congratulations, ${name}!`;
 };
 
