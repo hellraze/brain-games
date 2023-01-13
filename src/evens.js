@@ -29,7 +29,7 @@ const getUserAnswer = () => {
     }
   }
   return 'Correct!';
-}
+};
 
 export default () => {
   const userName = welcome();
