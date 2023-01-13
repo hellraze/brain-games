@@ -53,4 +53,6 @@ const calc = (name) => {
   return `Congratulations, ${name}!`;
 };
 
-console.log(calc(userName));
+export default () => {
+  console.log(calc(userName));
+};
