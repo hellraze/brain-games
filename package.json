@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/hellraze/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/hellraze/frontend-project-44/actions)",
   "bin": {
-	  "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/hellraze/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/hellraze/frontend-project-44#readme"
+  "homepage": "https://github.com/hellraze/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
