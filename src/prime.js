@@ -16,7 +16,7 @@ const isPrime = (num) => {
 
 const game = (name) => {
   for (let i = 0; i < 3; i += 1) {
-    const questionNumber = getRandomNumber();
+    const questionNumber = getRandomNumber() + 2;
     let correctAnswer = '';
     if (isPrime(questionNumber)) {
       correctAnswer = 'yes';
