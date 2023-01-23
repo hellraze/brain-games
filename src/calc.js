@@ -46,7 +46,7 @@ const calc = (name) => {
     const correctAnswer = calcExpression(questionExpression);
     const userAnswer = getUserAnswer();
     if (userAnswer !== String(correctAnswer)) {
-      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again ${userName}!`;
+      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again ${name}!`;
     }
     console.log('Correct!');
   }
