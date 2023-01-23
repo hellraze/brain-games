@@ -36,7 +36,7 @@ const game = (name) => {
     } else {
       return `'${userAnswer}' is wrong answer ;(. Correct answer was '${arrayOfNumbers[randomIndexOfArray]}'.\nLet's try again, ${name}!`;
     }
-}
+  }
   return `Congratulations, ${name}!`;
 };
 
