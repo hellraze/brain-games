@@ -41,5 +41,6 @@ const game = (name) => {
 };
 
 export default () => {
+  console.log('What number is missing in the progression?');
   console.log(game(username));
 };
