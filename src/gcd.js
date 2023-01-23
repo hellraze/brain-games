@@ -2,10 +2,7 @@ import readlineSync from 'readline-sync';
 import welcome from './welcome.js';
 import getRandomNumber from './getRandomNumber.js';
 
-const username = welcome();
-
 const findCommonDivisor = (num1, num2) => {
-
   let max = Math.max(num1, num2);
   let min = Math.min(num1, num2);
   let gcd = min;
@@ -14,34 +11,33 @@ const findCommonDivisor = (num1, num2) => {
     gcd = max % gcd;
     max = min;
     min = gcd;
-  };
-
+  }
   return gcd;
-
 };
 
-const game = (username) => {
-
+const game = (name) => {
   for (let i = 0; i < 3; i += 1) {
-    let firstNumber = getRandomNumber();
-    let secondNumber = getRandomNumber();
+    const firstNumber = getRandomNumber();
+    const secondNumber = getRandomNumber();
 
     console.log(`Question: ${firstNumber} ${secondNumber}`);
 
-    let correctAnswer = `${findCommonDivisor(firstNumber, secondNumber)}`;
-    let userAnswer = readlineSync.question('Your answer: ');
+    const correctAnswer = `${findCommonDivisor(firstNumber, secondNumber)}`;
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === correctAnswer) {
       console.log('Correct');
     } else {
       console.log('Incorrect');
-      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${username}!`;
+      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`;
     }
   };
 
-  return `Congratulations, ${username}`;
-}
+  return `Congratulations, ${name}`;
+};
 
-console.log('Find the greatest common divisor of given numbers.');
-
-console.log(game(username));
+export default () => {
+  const username = welcome();
+  console.log('Find the greatest common divisor of given numbers.');
+  console.log(game(username));
+};
