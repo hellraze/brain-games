@@ -33,7 +33,7 @@ const game = (name) => {
     }
   }
 
-  return `Congratulations, ${name}`;
+  return `Congratulations, ${name}!`;
 };
 
 export default () => {
