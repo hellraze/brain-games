@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 import welcome from './welcome.js';
 import getRandomNumber from './getRandomNumber.js';
 
-
 const username = welcome();
 
 const game = (name) => {
@@ -33,13 +32,12 @@ const game = (name) => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === `${arrayOfNumbers[randomIndexOfArray]}`) {
-      console.log(`Correct!`);
+      console.log('Correct!');
     } else {
       return `'${userAnswer}' is wrong answer ;(. Correct answer was '${arrayOfNumbers[randomIndexOfArray]}'.\nLet's try again, ${name}!`;
     }
-      }
-    
-    return `Congratulations, ${name}!`
+}
+  return `Congratulations, ${name}!`;
 };
 
 export default () => {
