@@ -44,5 +44,7 @@ export default () => {
   console.log(userAnswer);
   if (userAnswer === 'Correct!') {
     console.log(`Congratulations, ${userName}!`);
+  } else {
+    console.log(`Let's try again, ${userName}!`);
   }
 };
