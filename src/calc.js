@@ -29,6 +29,7 @@ const calcExpression = (expression) => {
     default:
       break;
   }
+  return null;
 };
 
 const getUserAnswer = () => {
