@@ -31,7 +31,7 @@ const game = (name) => {
       console.log('Incorrect');
       return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`;
     }
-  };
+  }
 
   return `Congratulations, ${name}`;
 };
