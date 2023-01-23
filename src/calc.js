@@ -9,7 +9,7 @@ const getRandomExpression = () => {
   const number2 = getRandomNumber();
   //  Get random arithmetic operators from array
   const operator = arithmeticOperators[Math.floor(Math.random() * arithmeticOperators.length)];
-  console.log(`${number1} ${operator} ${number2}`);
+  console.log(`Question: ${number1} ${operator} ${number2}`);
   return `${number1} ${operator} ${number2}`;
 };
 
