@@ -17,7 +17,7 @@ const game = (name) => {
     }
 
     const randomIndexOfArray = Math.floor(Math.random() * 10);
-    let str = '';
+    let str = 'Question: ';
 
     for (let i = 0; i < 10; i += 1) {
       if (i === randomIndexOfArray) {
