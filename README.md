@@ -18,3 +18,7 @@
   - Try to figure out number is prime
   [![asciicast](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n.svg)](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n)
 
+### Install:
+```sh
+$make install
+```
