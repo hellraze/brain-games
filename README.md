@@ -4,7 +4,7 @@
 ### Installation:
 
 ```sh
-$make install
+$ make install
 ```
 
 ## Games:
