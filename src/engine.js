@@ -10,15 +10,14 @@ export const welcome = () => {
 export const game = (username, condition, questionFunc, isCorrect) => {
   console.log(condition);
   let isWin = true;
-  for (let i = 0; i < 3; i +=1) {
-
+  for (let i = 0; i < 3; i += 1) {
     const question = questionFunc();
     const correctAnswer = isCorrect(question);
 
     console.log(`Question: ${question}`);
 
     const userAnswer = readlineSync.question('Your answer: ');
-    
+
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
@@ -31,5 +30,4 @@ export const game = (username, condition, questionFunc, isCorrect) => {
   if (isWin) {
     console.log(`Congratulations, ${username}!`);
   }
-  
 };
