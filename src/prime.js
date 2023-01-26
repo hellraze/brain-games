@@ -8,6 +8,9 @@ const generateQuestion = () => String(getRandomNumber(1, 100));
 
 const isCorrect = (question) => {
   const num = Number(question);
+  if (num === 1) {
+    return 'no';
+  }
   for (let i = 2; i <= Math.sqrt(num); i += 1) {
     if (num % i === 0) {
       return 'no';
