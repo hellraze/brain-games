@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "pet project containing 5 small games with arithmetic puzzles",
+  "description": "study project containing 5 small games with arithmetic puzzles",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
