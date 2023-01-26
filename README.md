@@ -1,6 +1,7 @@
-### Games:
-* [brain-even](https://asciinema.org/a/GuvFKbOzpLZq89pNMQ53njLQY)
+## Games:
+* ###brain-even
   - *Try to figure out number is even*
+  [![asciicast](https://asciinema.org/a/GuvFKbOzpLZq89pNMQ53njLQY.svg)](https://asciinema.org/a/GuvFKbOzpLZq89pNMQ53njLQY)
 * [brain-calc](https://asciinema.org/a/C6ZSLtODqoCLiEvvDeNobil6D)
   - *Try to solve the expression*
 * [brain-gcd](https://asciinema.org/a/LbovfwyHctgZVLWSEJeUtH17R)
