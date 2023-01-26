@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/hellraze/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/hellraze/frontend-project-44/actions)",
+  "description": "pet project containing 5 small games with arithmetic puzzles",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
