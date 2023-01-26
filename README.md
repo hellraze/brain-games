@@ -2,6 +2,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/73854f324f73d089f7ca/maintainability)](https://codeclimate.com/github/hellraze/frontend-project-44/maintainability)
 
 ## Games:
+
 * ***brain-even***
   - Try to figure out number is even
   [![asciicast](https://asciinema.org/a/NxX8dSoGHsdqwHoYBtIULwzby.svg)](https://asciinema.org/a/NxX8dSoGHsdqwHoYBtIULwzby)
@@ -18,7 +19,8 @@
   - Try to figure out number is prime
   [![asciicast](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n.svg)](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n)
 
-### Install:
+### Installation:
+
 ```sh
 $make install
 ```
