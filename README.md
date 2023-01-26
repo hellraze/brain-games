@@ -1,6 +1,12 @@
 [![Actions Status](https://github.com/hellraze/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/hellraze/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/73854f324f73d089f7ca/maintainability)](https://codeclimate.com/github/hellraze/frontend-project-44/maintainability)
 
+### Installation:
+
+```sh
+$make install
+```
+
 ## Games:
 
 * ***brain-even***
@@ -18,9 +24,3 @@
 * ***brain-prime***
   - Try to figure out number is prime
   [![asciicast](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n.svg)](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n)
-
-### Installation:
-
-```sh
-$make install
-```
