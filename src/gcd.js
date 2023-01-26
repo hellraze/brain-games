@@ -1,5 +1,5 @@
 import { welcome, game } from './engine.js';
-import { getRandomNumber } from './lib.js';
+import getRandomNumber from './lib.js';
 
 const username = welcome();
 const condition = 'Find the greatest common divisor of given numbers.';

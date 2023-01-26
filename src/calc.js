@@ -1,4 +1,4 @@
-import { getRandomNumber } from './lib.js';
+import getRandomNumber from './lib.js';
 import { welcome, game } from './engine.js';
 
 const username = welcome();
