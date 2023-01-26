@@ -16,4 +16,4 @@ const isCorrect = (question) => {
   return 'yes';
 };
 
-game(username, condition, generateQuestion, isCorrect);
+export default () => game(username, condition, generateQuestion, isCorrect);
