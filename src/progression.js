@@ -42,7 +42,7 @@ const isCorrect = (question) => {
   }
 
   if ((index === 0) || (index === 1)) {
-    correct = questionParts[1] - (questionParts[2] - questionParts[1]);
+    correct = questionParts[index + 1] - (questionParts[index + 2] - questionParts[index + 1]);
   } else {
     correct = questionParts[index - 1] + (questionParts[index - 1] - questionParts[index - 2]);
   }
