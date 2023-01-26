@@ -1,3 +1,6 @@
+[![Actions Status](https://github.com/hellraze/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/hellraze/frontend-project-44/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/73854f324f73d089f7ca/maintainability)](https://codeclimate.com/github/hellraze/frontend-project-44/maintainability)
+
 ## Games:
 * ***brain-even***
   - Try to figure out number is even
@@ -11,5 +14,3 @@
 * [brain-prime](https://asciinema.org/a/whJHPD4WrTk0VNw7KmE21AJSY)
   - Try to figure out number is prime
 
-[![Actions Status](https://github.com/hellraze/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/hellraze/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/73854f324f73d089f7ca/maintainability)](https://codeclimate.com/github/hellraze/frontend-project-44/maintainability)
