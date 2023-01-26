@@ -1,59 +1,35 @@
-import readlineSync from 'readline-sync';
-import getRandomNumber from './getRandomNumber.js';
-import welcome from './welcome.js';
+import { getRandomNumber } from './lib.js';
+import { welcome, game } from './engine.js';
 
-//  Get random arithmetic expression. Return string
-const getRandomExpression = () => {
+const username = welcome();
+const condition = 'What is the result of the expression?';
+
+const generateQuestion = () => {
   const arithmeticOperators = ['+', '-', '*'];
-  const number1 = getRandomNumber();
-  const number2 = getRandomNumber();
-  //  Get random arithmetic operators from array
-  const operator = arithmeticOperators[Math.floor(Math.random() * arithmeticOperators.length)];
-  console.log(`Question: ${number1} ${operator} ${number2}`);
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
+  const operator = arithmeticOperators[getRandomNumber(0, arithmeticOperators.length - 1)];
+
   return `${number1} ${operator} ${number2}`;
 };
 
-const calcExpression = (expression) => {
-  const expressionParts = expression.split(' ');
-  const number1 = Number(expressionParts[0]);
-  const number2 = Number(expressionParts[2]);
-  const operator = expressionParts[1];
+const isCorrect = (question) => {
+  const questionParts = question.split(' ');
+  const number1 = Number(questionParts[0]);
+  const number2 = Number(questionParts[2]);
+  const operator = questionParts[1];
 
   switch (operator) {
     case '+':
-      return number1 + number2;
+      return String(number1 + number2);
     case '-':
-      return number1 - number2;
+      return String(number1 - number2);
     case '*':
-      return number1 * number2;
+      return String(number1 * number2);
     default:
       break;
   }
   return null;
 };
 
-const getUserAnswer = () => {
-  const userAnswer = readlineSync.question('Your answer: ');
-  return userAnswer;
-};
-
-const userName = welcome();
-
-console.log('What is the result of the expression?');
-
-const calc = (name) => {
-  for (let i = 0; i < 3; i += 1) {
-    const questionExpression = getRandomExpression();
-    const correctAnswer = calcExpression(questionExpression);
-    const userAnswer = getUserAnswer();
-    if (userAnswer !== String(correctAnswer)) {
-      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`;
-    }
-    console.log('Correct!');
-  }
-  return `Congratulations, ${name}!`;
-};
-
-export default () => {
-  console.log(calc(userName));
-};
+export default () => game(username, condition, generateQuestion, isCorrect);
