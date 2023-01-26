@@ -1,5 +1,5 @@
 ## Games:
-* ###brain-even
+* ***brain-even***
   - *Try to figure out number is even*
   [![asciicast](https://asciinema.org/a/GuvFKbOzpLZq89pNMQ53njLQY.svg)](https://asciinema.org/a/GuvFKbOzpLZq89pNMQ53njLQY)
 * [brain-calc](https://asciinema.org/a/C6ZSLtODqoCLiEvvDeNobil6D)
