@@ -4,13 +4,16 @@
 ## Games:
 * ***brain-even***
   - Try to figure out number is even
-  [![asciicast](https://asciinema.org/a/GuvFKbOzpLZq89pNMQ53njLQY.svg)](https://asciinema.org/a/GuvFKbOzpLZq89pNMQ53njLQY)
-* [brain-calc](https://asciinema.org/a/C6ZSLtODqoCLiEvvDeNobil6D)
+  [![asciicast](https://asciinema.org/a/NxX8dSoGHsdqwHoYBtIULwzby.svg)](https://asciinema.org/a/NxX8dSoGHsdqwHoYBtIULwzby)
+* ***brain-calc***
   - Try to solve the expression
-* [brain-gcd](https://asciinema.org/a/LbovfwyHctgZVLWSEJeUtH17R)
+  [![asciicast](https://asciinema.org/a/nLyHpDiof39JQnYIpFEU6z1Og.svg)](https://asciinema.org/a/nLyHpDiof39JQnYIpFEU6z1Og)
+* ***brain-gcd***
   - Try to find the greatest common divisor of two numbers
-* [brain-progression](https://asciinema.org/a/RAw3DNzFmqst9nSka4eZQbUhA)
+  [![asciicast](https://asciinema.org/a/LfzTkINqLfnJ1JOgGoVVSidil.svg)](https://asciinema.org/a/LfzTkINqLfnJ1JOgGoVVSidil)
+* ***brain-progression***
   - Try to find missing number
-* [brain-prime](https://asciinema.org/a/whJHPD4WrTk0VNw7KmE21AJSY)
+* ***brain-prime***
   - Try to figure out number is prime
+  [![asciicast](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n.svg)](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n)
 
