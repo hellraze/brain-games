@@ -13,6 +13,7 @@
   [![asciicast](https://asciinema.org/a/LfzTkINqLfnJ1JOgGoVVSidil.svg)](https://asciinema.org/a/LfzTkINqLfnJ1JOgGoVVSidil)
 * ***brain-progression***
   - Try to find missing number
+  [![asciicast](https://asciinema.org/a/6bTbVQbEGnVkw7zmf4Coeci5U.svg)](https://asciinema.org/a/6bTbVQbEGnVkw7zmf4Coeci5U)
 * ***brain-prime***
   - Try to figure out number is prime
   [![asciicast](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n.svg)](https://asciinema.org/a/bzNiJIA84TLglLXXyzEZpv24n)
