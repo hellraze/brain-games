@@ -1,21 +1,7 @@
 import game from '../src/engine.js';
-import getRandomNumber from '../src/lib.js';
+import { getRandomNumber, gcd } from '../src/lib.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';
-
-const gcd = (num1, num2) => {
-  let max = Math.max(num1, num2);
-  let min = Math.min(num1, num2);
-  let result = min;
-
-  while (max % result > 0) {
-    result = max % result;
-    max = min;
-    min = result;
-  }
-
-  return String(result);
-};
 
 const generateInfo = () => {
   const result = [];

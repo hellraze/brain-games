@@ -1,5 +1,5 @@
 import game from '../src/engine.js';
-import getRandomNumber from '../src/lib.js';
+import { getRandomNumber } from '../src/lib.js';
 
 const condition = 'What number is missing in the progression?';
 
