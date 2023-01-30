@@ -1,22 +1,26 @@
-import { welcome, game } from './engine.js';
-import getRandomNumber from './lib.js';
+import game from '../src/engine.js';
+import getRandomNumber from '../src/lib.js';
 
-const username = welcome();
 const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const generateQuestion = () => String(getRandomNumber(1, 100));
+const generateInfo = () => {
+  const result = [];
+  const question = getRandomNumber(1, 100);
+  result.push(question);
 
-const isCorrect = (question) => {
-  const num = Number(question);
-  if (num === 1) {
-    return 'no';
+  if (question === 1) {
+    result.push('no');
   }
-  for (let i = 2; i <= Math.sqrt(num); i += 1) {
-    if (num % i === 0) {
-      return 'no';
+
+  for (let i = 2; i <= Math.sqrt(question); i += 1) {
+    if (question % i === 0) {
+      result.push('no');
     }
   }
-  return 'yes';
+
+  result.push('yes');
+
+  return result;
 };
 
-export default () => game(username, condition, generateQuestion, isCorrect);
+export default () => game(condition, generateInfo);
