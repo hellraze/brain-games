@@ -5,10 +5,10 @@ const username = welcome();
 const condition = 'What is the result of the expression?';
 
 const generateQuestion = () => {
-  const arithmeticOperators = ['+', '-', '*'];
+  const operators = ['+', '-', '*'];
   const number1 = getRandomNumber(1, 10);
   const number2 = getRandomNumber(1, 10);
-  const operator = arithmeticOperators[getRandomNumber(0, arithmeticOperators.length - 1)];
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
 
   return `${number1} ${operator} ${number2}`;
 };
