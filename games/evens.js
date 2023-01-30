@@ -5,13 +5,13 @@ const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => number % 2 === 0;
 
-const correctAnswer = (question) => (isEven(Number(question)) ? 'yes' : 'no');
+const correctAnswer = (question) => (isEven(question) ? 'yes' : 'no');
 
 const generateInfo = () => {
   const result = [];
-  const question = String(getRandomNumber(1, 10));
+  const question = getRandomNumber(1, 10);
   const answer = correctAnswer(question);
-  result.push(question);
+  result.push(String(question));
   result.push(answer);
   return result;
 };
