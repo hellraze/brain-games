@@ -1,19 +1,14 @@
 import game from '../src/engine.js';
-import { getRandomNumber } from '../src/lib.js';
+import { getRandomNumber, generateArrayOfProg } from '../src/lib.js';
 
 const condition = 'What number is missing in the progression?';
 
 const generateInfo = () => {
   const result = [];
-  let nextNumOfProg = getRandomNumber(1, 10);
+  const firstElem = getRandomNumber(1, 10);
   const diffOfProgression = getRandomNumber(1, 10);
   let question = '';
-  const arrayOfNumbers = [];
-
-  for (let i = 10; i > 0; i -= 1) {
-    nextNumOfProg += diffOfProgression;
-    arrayOfNumbers.push(nextNumOfProg);
-  }
+  const arrayOfNumbers = generateArrayOfProg(firstElem, diffOfProgression);
 
   const randomIndex = getRandomNumber(0, arrayOfNumbers.length - 1);
 

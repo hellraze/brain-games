@@ -30,3 +30,13 @@ export const isPrime = (num) => {
 
   return true;
 };
+
+export const generateArrayOfProg = (firstElem, diffOfProg) => {
+  const arrayOfNumbers = [firstElem];
+  let nextNumOfProg = firstElem;
+  for (let i = 9; i > 0; i -= 1) {
+    nextNumOfProg += diffOfProg;
+    arrayOfNumbers.push(nextNumOfProg);
+  }
+  return arrayOfNumbers;
+};
