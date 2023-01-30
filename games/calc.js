@@ -12,7 +12,7 @@ const getAnswer = (number1, number2, operator) => {
     case '*':
       return String(number1 * number2);
     default:
-      return `Unknown operator: ${operator}`;
+      throw new Error(`Unknown operator: ${operator}`);
   }
 };
 
