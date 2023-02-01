@@ -16,7 +16,7 @@ const calculate = (number1, number2, operator) => {
   }
 };
 
-const generateInfo = () => {
+const generateRound = () => {
   const result = [];
   const operators = ['+', '-', '*'];
   const number1 = getRandomNumber(1, 10);
@@ -32,4 +32,4 @@ const generateInfo = () => {
   return result;
 };
 
-export default () => game(description, generateInfo);
+export default () => game(description, generateRound);

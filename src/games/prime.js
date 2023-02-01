@@ -3,7 +3,7 @@ import { getRandomNumber, isPrime } from '../lib.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const generateInfo = () => {
+const generateRound = () => {
   const result = [];
   const question = getRandomNumber(1, 100);
   result.push(question);
@@ -14,4 +14,4 @@ const generateInfo = () => {
   return result;
 };
 
-export default () => game(description, generateInfo);
+export default () => game(description, generateRound);

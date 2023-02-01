@@ -7,7 +7,7 @@ const isEven = (number) => number % 2 === 0;
 
 const correctAnswer = (question) => (isEven(question) ? 'yes' : 'no');
 
-const generateInfo = () => {
+const generateRound = () => {
   const result = [];
   const question = getRandomNumber(1, 10);
   const answer = correctAnswer(question);
@@ -16,4 +16,4 @@ const generateInfo = () => {
   return result;
 };
 
-export default () => game(description, generateInfo);
+export default () => game(description, generateRound);

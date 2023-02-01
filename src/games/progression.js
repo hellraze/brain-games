@@ -3,7 +3,7 @@ import { getRandomNumber, generateArrayOfProg } from '../lib.js';
 
 const description = 'What number is missing in the progression?';
 
-const generateInfo = () => {
+const generateRound = () => {
   const result = [];
   const firstElem = getRandomNumber(1, 10);
   const diffOfProgression = getRandomNumber(1, 10);
@@ -26,4 +26,4 @@ const generateInfo = () => {
   return result;
 };
 
-export default () => game(description, generateInfo);
+export default () => game(description, generateRound);
