@@ -1,5 +1,5 @@
-import game from '../src/engine.js';
-import { getRandomNumber, isPrime } from '../src/lib.js';
+import game from '../engine.js';
+import { getRandomNumber, isPrime } from '../lib.js';
 
 const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

@@ -1,5 +1,5 @@
-import game from '../src/engine.js';
-import { getRandomNumber, gcd } from '../src/lib.js';
+import game from '../engine.js';
+import { getRandomNumber, gcd } from '../lib.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';
 

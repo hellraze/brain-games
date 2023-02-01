@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../src/lib.js';
-import game from '../src/engine.js';
+import { getRandomNumber } from '../lib.js';
+import game from '../engine.js';
 
 const condition = 'What is the result of the expression?';
 
