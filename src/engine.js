@@ -5,8 +5,9 @@ export default (description, generateRound) => {
   const username = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${username}`);
   console.log(description);
+  const rounds = 3;
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < rounds; i += 1) {
     const [question, correctAnswer] = generateRound();
 
     console.log(`Question: ${question}`);
