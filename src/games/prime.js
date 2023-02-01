@@ -1,7 +1,7 @@
 import game from '../engine.js';
 import { getRandomNumber, isPrime } from '../lib.js';
 
-const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const generateInfo = () => {
   const result = [];
@@ -14,4 +14,4 @@ const generateInfo = () => {
   return result;
 };
 
-export default () => game(condition, generateInfo);
+export default () => game(description, generateInfo);

@@ -1,16 +1,16 @@
 import { getRandomNumber } from '../lib.js';
 import game from '../engine.js';
 
-const condition = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-const getAnswer = (number1, number2, operator) => {
+const calculate = (number1, number2, operator) => {
   switch (operator) {
     case '+':
-      return String(number1 + number2);
+      return number1 + number2;
     case '-':
-      return String(number1 - number2);
+      return number1 - number2;
     case '*':
-      return String(number1 * number2);
+      return number1 * number2;
     default:
       throw new Error(`Unknown operator: ${operator}`);
   }
@@ -25,11 +25,11 @@ const generateInfo = () => {
 
   result.push(`${number1} ${operator} ${number2}`);
 
-  const correctAnswer = getAnswer(number1, number2, operator);
+  const correctAnswer = String(calculate(number1, number2, operator));
 
   result.push(correctAnswer);
 
   return result;
 };
 
-export default () => game(condition, generateInfo);
+export default () => game(description, generateInfo);

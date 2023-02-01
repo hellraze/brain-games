@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 
-export default (condition, generateInfo) => {
+export default (description, generateInfo) => {
   console.log('Welcome to the Brain Games!');
   const username = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${username}`);
-  console.log(condition);
+  console.log(description);
 
   for (let i = 0; i < 3; i += 1) {
     const gameInfo = generateInfo();

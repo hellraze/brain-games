@@ -1,7 +1,7 @@
 import game from '../engine.js';
 import { getRandomNumber, generateArrayOfProg } from '../lib.js';
 
-const condition = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const generateInfo = () => {
   const result = [];
@@ -26,4 +26,4 @@ const generateInfo = () => {
   return result;
 };
 
-export default () => game(condition, generateInfo);
+export default () => game(description, generateInfo);
