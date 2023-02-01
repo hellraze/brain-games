@@ -7,9 +7,7 @@ export default (description, generateRound) => {
   console.log(description);
 
   for (let i = 0; i < 3; i += 1) {
-    const gameInfo = generateRound();
-    const question = gameInfo[0];
-    const correctAnswer = gameInfo[1];
+    const [question, correctAnswer] = generateRound();
 
     console.log(`Question: ${question}`);
 
