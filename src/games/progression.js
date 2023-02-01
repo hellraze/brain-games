@@ -1,13 +1,23 @@
 import game from '../engine.js';
-import { getRandomNumber, generateArrayOfProg } from '../lib.js';
+import getRandomNumber from '../lib.js';
 
 const description = 'What number is missing in the progression?';
+
+export const generateProgression = (firstElem, diffOfProg) => {
+  const arrayOfNumbers = [firstElem];
+  let nextNumOfProg = firstElem;
+  for (let i = 9; i > 0; i -= 1) {
+    nextNumOfProg += diffOfProg;
+    arrayOfNumbers.push(nextNumOfProg);
+  }
+  return arrayOfNumbers;
+};
 
 const generateRound = () => {
   const firstElem = getRandomNumber(1, 10);
   const diffOfProgression = getRandomNumber(1, 10);
   let question = '';
-  const arrayOfNumbers = generateArrayOfProg(firstElem, diffOfProgression);
+  const arrayOfNumbers = generateProgression(firstElem, diffOfProgression);
 
   const randomIndex = getRandomNumber(0, arrayOfNumbers.length - 1);
 
