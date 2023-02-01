@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../lib.js';
+import getRandomNumber from '../lib.js';
 import game from '../engine.js';
 
 const description = 'What is the result of the expression?';
