@@ -4,7 +4,6 @@ import { getRandomNumber, generateArrayOfProg } from '../lib.js';
 const description = 'What number is missing in the progression?';
 
 const generateRound = () => {
-  const result = [];
   const firstElem = getRandomNumber(1, 10);
   const diffOfProgression = getRandomNumber(1, 10);
   let question = '';
@@ -20,10 +19,9 @@ const generateRound = () => {
     }
   }
 
-  result.push(question);
-  result.push(String(arrayOfNumbers[randomIndex]));
+  const hiddenNumberIndex = String(arrayOfNumbers[randomIndex]);
 
-  return result;
+  return [question, hiddenNumberIndex];
 };
 
 export default () => game(description, generateRound);

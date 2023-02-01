@@ -8,12 +8,9 @@ const isEven = (number) => number % 2 === 0;
 const correctAnswer = (question) => (isEven(question) ? 'yes' : 'no');
 
 const generateRound = () => {
-  const result = [];
-  const question = getRandomNumber(1, 10);
+  const question = String(getRandomNumber(1, 10));
   const answer = correctAnswer(question);
-  result.push(String(question));
-  result.push(answer);
-  return result;
+  return [question, answer];
 };
 
 export default () => game(description, generateRound);
