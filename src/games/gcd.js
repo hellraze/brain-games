@@ -3,9 +3,9 @@ import getRandomNumber from '../lib.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const getGCD = (num1, num2) => {
-  let max = Math.max(num1, num2);
-  let min = Math.min(num1, num2);
+const getGCD = (number1, number2) => {
+  let max = Math.max(number1, number2);
+  let min = Math.min(number1, number2);
   let result = min;
 
   while (max % result > 0) {
@@ -18,12 +18,12 @@ const getGCD = (num1, num2) => {
 };
 
 const generateRound = () => {
-  const num1 = getRandomNumber(1, 10);
-  const num2 = getRandomNumber(1, 10);
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
 
-  const question = `${num1} ${num2}`;
+  const question = `${number1} ${number2}`;
 
-  const answer = getGCD(num1, num2);
+  const answer = getGCD(number1, number2);
 
   return [question, answer];
 };
